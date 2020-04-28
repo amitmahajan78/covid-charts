@@ -81,8 +81,8 @@ axios.get('https://amitmahajan-cloud-gmail-chart-test-data.s3.eu-west-2.amazonaw
             switch (bullet) {
                 case "triangle":
                     var bullet = series.bullets.push(new am4charts.Bullet());
-                    bullet.width = 12;
-                    bullet.height = 12;
+                    bullet.width = 2;
+                    bullet.height = 2;
                     bullet.horizontalCenter = "middle";
                     bullet.verticalCenter = "middle";
 
@@ -90,26 +90,27 @@ axios.get('https://amitmahajan-cloud-gmail-chart-test-data.s3.eu-west-2.amazonaw
                     triangle.stroke = interfaceColors.getFor("background");
                     triangle.strokeWidth = 2;
                     triangle.direction = "top";
-                    triangle.width = 12;
-                    triangle.height = 12;
+                    triangle.width = 2;
+                    triangle.height = 2;
                     break;
                 case "rectangle":
                     var bullet = series.bullets.push(new am4charts.Bullet());
-                    bullet.width = 10;
-                    bullet.height = 10;
+                    bullet.width = 2;
+                    bullet.height = 2;
                     bullet.horizontalCenter = "middle";
                     bullet.verticalCenter = "middle";
 
                     var rectangle = bullet.createChild(am4core.Rectangle);
                     rectangle.stroke = interfaceColors.getFor("background");
                     rectangle.strokeWidth = 2;
-                    rectangle.width = 10;
-                    rectangle.height = 10;
+                    rectangle.width = 2;
+                    rectangle.height = 2;
                     break;
                 default:
                     var bullet = series.bullets.push(new am4charts.CircleBullet());
                     bullet.circle.stroke = interfaceColors.getFor("background");
                     bullet.circle.strokeWidth = 2;
+                    
                     break;
             }
 
@@ -207,8 +208,8 @@ axios.get('https://amitmahajan-cloud-gmail-chart-test-data.s3.eu-west-2.amazonaw
                     triangle.stroke = interfaceColors.getFor("background");
                     triangle.strokeWidth = 2;
                     triangle.direction = "top";
-                    triangle.width = 12;
-                    triangle.height = 12;
+                    triangle.width = 2;
+                    triangle.height = 2;
                     break;
                 case "rectangle":
                     var bullet = series.bullets.push(new am4charts.Bullet());
@@ -220,8 +221,8 @@ axios.get('https://amitmahajan-cloud-gmail-chart-test-data.s3.eu-west-2.amazonaw
                     var rectangle = bullet.createChild(am4core.Rectangle);
                     rectangle.stroke = interfaceColors.getFor("background");
                     rectangle.strokeWidth = 2;
-                    rectangle.width = 10;
-                    rectangle.height = 10;
+                    rectangle.width = 2;
+                    rectangle.height = 2;
                     break;
                 default:
                     var bullet = series.bullets.push(new am4charts.CircleBullet());
